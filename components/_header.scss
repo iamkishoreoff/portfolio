@@ -1,0 +1,84 @@
+
+.frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+    .gradient{
+        width: 52%;
+        height: 77%;
+        position: absolute;
+        bottom: 74px;
+        background: $gradient;
+        border-radius: 10px;
+
+        @media screen and (max-width: 500px){
+            height: 77%;
+        }
+    }
+
+    header {
+        width: 50%;
+        height: 98%;
+        margin-top: 2rem;
+        background-image: url(profile1.jpg);
+        background-size: cover;
+        background-position: 0 40px;
+        background-repeat: no-repeat;
+        position: relative;
+
+        @media screen and (max-width: 700px){
+            background-position: center;
+        }
+
+        @media screen and (max-width: 500px){
+            background-position: center;
+            width: 50%;
+            height: 94%;
+        }
+
+        .social{
+            height: 100%;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            margin-left: 10px;
+            text-align: center;
+
+            .fa-brands{
+                margin-bottom: 10px;
+            }
+
+            .line{
+                margin: 0 auto;
+                width: 4px;
+                border-radius: 10px;
+                height: 20%;
+                background: #ae81bf;
+                margin-bottom: 20px;
+            }
+
+            .line-1{
+                margin-top: 10px;
+            }
+        }
+
+        h1{
+            margin-left: 38px;
+            color: white;
+            font-size: 5rem;
+            font-family: $main-font;
+            font-weight: normal;
+            transform: translateY(-42px);
+
+            @media screen and (max-width: 500px){
+                transform: translateY(-36px);
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
